@@ -8,9 +8,8 @@ describe Bacon do
 
 
  it "expired!" do
-  bacon = Bacon.new
-  bacon.expired!
-  bacon.should be_expired
+  subject.expired!
+  subject.should_not be_edible
  end
 
 
